@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bafba3ea-8749-4c33-9a48-33b9ae8a12d4"
+      }
+    },
+    "owner": "jpgaviria"
   }
 }

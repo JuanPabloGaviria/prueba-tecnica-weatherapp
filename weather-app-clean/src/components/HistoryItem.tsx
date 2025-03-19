@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { WeatherData } from '../types';
+import { WeatherData } from '../../src/types';
 
 interface HistoryItemProps {
   item: WeatherData;

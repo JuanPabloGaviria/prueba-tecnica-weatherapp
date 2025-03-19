@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { WeatherData } from '../types';
+import { WeatherData } from '../../src/types';
 
 interface WeatherCardProps {
   weather: WeatherData | null;

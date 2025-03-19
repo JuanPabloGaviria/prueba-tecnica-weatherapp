@@ -23,6 +23,17 @@ Esta aplicación de clima fue desarrollada como prueba técnica para demostrar h
 - **OpenWeatherMap API**: API para datos meteorológicos
 - **React Hooks**: Para gestión de estado y efectos secundarios
 
+## Despliegue y Distribución
+
+La aplicación está disponible a través de:
+
+- **Expo EAS Update**: La aplicación está publicada para actualización vía Expo EAS
+  - URL del Dashboard: https://expo.dev/accounts/jpgaviria/projects/weather-app-fresh/updates/722bde80-8035-45ab-b45c-ed28487ca45a
+
+- **Build de Android**: Se ha generado un archivo APK instalable para Android
+  - Build ID: f4115d86-1c8f-4ae4-bb48-91b448946b97
+  - APK Download: https://expo.dev/accounts/jpgaviria/projects/weather-app-fresh/builds/f4115d86-1c8f-4ae4-bb48-91b448946b97
+
 ## Estructura del Proyecto
 
 ```
@@ -66,6 +77,27 @@ weather-app/
    ```
    npx expo start
    ```
+
+5. **Para generar un build (opcional)**:
+   ```
+   eas build --platform android --profile preview
+   ```
+
+6. **Para desplegar en Render.com (versión web)**:
+   - Instala dependencias necesarias:
+   ```
+   npm install --legacy-peer-deps @expo/webpack-config serve
+   ```
+   - Añade estos scripts a tu package.json:
+   ```json
+   "scripts": {
+     "build:web": "expo export:web",
+     "start:web": "serve web-build -p 3000"
+   }
+   ```
+   - Configura Render.com con estos parámetros:
+     - Build Command: `npm install && npx expo export:web`
+     - Start Command: `npx serve web-build -p $PORT`
 
 ## Desafíos Encontrados
 
@@ -121,3 +153,5 @@ Juan Pablo Gaviria - Desarrollador de Software
 ## Conclusión
 
 Este proyecto demuestra mi capacidad para desarrollar aplicaciones móviles modernas con arquitecturas limpias y escalables. A pesar de las limitaciones técnicas y del entorno, logré crear una aplicación funcional, elegante y con una experiencia de usuario intuitiva que cumple con todos los requisitos solicitados.
+
+También logré implementar un sistema de despliegue completo utilizando las herramientas de Expo EAS, demostrando conocimientos no solo de desarrollo sino también de DevOps y distribución de aplicaciones móviles.

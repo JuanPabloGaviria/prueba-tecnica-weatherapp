@@ -1,5 +1,5 @@
-import { API_KEY, BASE_URL } from '../utils/constants';
-import { WeatherData } from '../types';
+import { API_KEY, BASE_URL } from '../../src/utils/constants';
+import { WeatherData } from '../../src/types';
 
 export const fetchWeatherData = async (city: string): Promise<WeatherData> => {
   try {

@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
-import { WeatherData, ErrorState } from '../types';
-import { fetchWeatherData } from '../services/weatherService';
-import { saveWeatherSearch, getWeatherHistory } from '../services/storageService';
+import { WeatherData, ErrorState } from '../../src/types';
+import { fetchWeatherData } from '../../src/services/weatherService';
+import { saveWeatherSearch, getWeatherHistory } from '../../src/services/storageService';
 
 export const useWeather = () => {
   const [currentWeather, setCurrentWeather] = useState<WeatherData | null>(null);

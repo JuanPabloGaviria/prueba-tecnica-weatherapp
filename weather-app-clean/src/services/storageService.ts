@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { WeatherData } from '../types';
-import { STORAGE_KEY } from '../utils/constants';
+import { WeatherData } from '../../src/types';
+import { STORAGE_KEY } from '../../src/utils/constants';
 
 export const saveWeatherSearch = async (weatherData: WeatherData): Promise<void> => {
   try {
